@@ -3,33 +3,6 @@
 Book futsal, padel, and pickleball courts across Kuala Lumpur — Next.js (App Router) + Supabase.
 
 
-## Setup
-
-1. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-2. **Connect Supabase**
-   - Copy `.env.local.example` to `.env.local` and fill in your project's URL
-     and anon key (Supabase dashboard → Project Settings → API).
-
-3. **Apply the schema**
-   - Open your Supabase project's SQL editor and run
-     `supabase/migrations/0001_init.sql`.
-   - It creates `venues`, `courts`, `bookings`, `profiles`, enables RLS, and
-     adds a database-level exclusion constraint so two people can never book
-     the same court for an overlapping time slot (no race conditions).
-   - It also seeds 4 sample venues matching the original UI mock — delete
-     that block from the migration first if you already have real venues in
-     your database, and instead make sure your existing tables match the
-     columns this app queries (see "Adjusting to a different schema" below).
-
-4. **Run it**
-   ```bash
-   npm run dev
-   ```
-
 ## How booking works
 
 - `/` and `/venues` list venues from the `venues` table (filterable by sport
