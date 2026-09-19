@@ -1,6 +1,6 @@
 # Do Booking for Do Arena 
 
-Book futsal, padel, and pickleball courts in Kedah — Next.js (App Router) + Supabase.
+Book futsal, padel, and pickleball courts across Kuala Lumpur — Next.js (App Router) + Supabase.
 
 
 ## Setup
