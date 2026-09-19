@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #ffffff;
+  --color-ink: #0f172a;
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #1e3a8a;
+  --color-primary-light: #eaf0fd;
+  --color-secondary: #dc2626;
+  --color-secondary-light: #fdecec;
+  --color-line: #e2e5ea;
+
+  --font-body: "Inter", "Inter Fallback", sans-serif;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* Sport-specific accent utility classes */
+.sport-futsal {
+  --sport-color: var(--color-primary);
+  --sport-bg: var(--color-primary-light);
+}
+.sport-padel {
+  --sport-color: var(--color-secondary);
+  --sport-bg: var(--color-secondary-light);
+}
+.sport-pickleball {
+  --sport-color: #0f172a;
+  --sport-bg: #eef0f3;
+}
+
+/* Simple placeholder block for images not yet added */
+.img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef1f5;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #e6e9ee,
+    #e6e9ee 10px,
+    #eef1f5 10px,
+    #eef1f5 20px
+  );
+  color: #8a93a3;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
