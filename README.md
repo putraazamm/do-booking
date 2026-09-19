@@ -1,6 +1,7 @@
-# Do Arena
+# Do Booking for Do Arena 
 
 Book futsal, padel, and pickleball courts in Kedah — Next.js (App Router) + Supabase.
+
 
 ## Setup
 
@@ -52,6 +53,3 @@ have differently-named tables/columns in Supabase, the places to edit are:
   `.select(...)` queries
 - `app/api/bookings/route.ts`, `app/api/bookings/[id]/route.ts`,
   `app/api/availability/route.ts` — the booking/availability logic
-
-Send me your actual table/column names and I can adjust these with targeted
-diffs instead of a full rewrite.
